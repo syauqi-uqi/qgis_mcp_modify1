@@ -1,0 +1,11 @@
+[general]
+name=qgis_mcp_plugin
+description=Servidor socket para ejecutar comandos MCP en QGIS
+version=1.0
+qgisMinimumVersion=3.0
+author=TuNombre
+email=tu_correo@example.com
+category=Plugins
+
+[about]
+about=Este plugin inicia un servidor MCP en QGIS para permitir la ejecución de comandos desde un LLM.
