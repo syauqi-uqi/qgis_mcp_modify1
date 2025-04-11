@@ -1,4 +1,4 @@
-# QGISMCP - QGIS Model Context Protocol Integration (updated version from https://github.com/jjsantos01/qgis_mcp)#
+# QGISMCP - QGIS Model Context Protocol Integration (updated version from https://github.com/jjsantos01/qgis_mcp)
 
 QGISMCP connects [QGIS](https://qgis.org/) to [Claude AI](https://claude.ai/chat) through the Model Context Protocol (MCP), allowing Claude to directly interact with and control QGIS. This integration enables prompt assisted project creation, layer loading, code execution and more.
 
@@ -139,8 +139,10 @@ You have access to the tools to work with QGIS. You will do the following:
 	9. Save the project.
 ```
 
+### Another Example Commands In my version
+
+
 ```plain
-In my version
 You have access to the tools to work with QGIS. You will do the following:
 
 1. **Ping to check the connection**. If successful, proceed.  
