@@ -1,7 +1,8 @@
-# QGISMCP - QGIS Model Context Protocol Integration
+# QGISMCP - QGIS Model Context Protocol Integration (updated version from https://github.com/jjsantos01/qgis_mcp)#
 
 QGISMCP connects [QGIS](https://qgis.org/) to [Claude AI](https://claude.ai/chat) through the Model Context Protocol (MCP), allowing Claude to directly interact with and control QGIS. This integration enables prompt assisted project creation, layer loading, code execution and more.
 
+The main project based on the (https://github.com/jjsantos01/qgis_mcp). I am just updating some error that i found
 This project is strongly based on the [BlenderMCP](https://github.com/ahujasid/blender-mcp/tree/main) project by [Siddharth Ahuja](https://x.com/sidahuj)
 
 ## Features
@@ -123,6 +124,7 @@ Once the config file has been set on Claude, and the server is running on QGIS, 
 ### Example Commands
 
 This is the example I used for the [demo](https://x.com/jjsantoso/status/1900293848271667395):
+Or, for this updated version, see (https://www.linkedin.com/posts/syauqi-arka-yudisti-73b236288_qgis-ai-vibemapping-activity-7316248625045483524-hQdB?utm_source=share&utm_medium=member_android&rcm=ACoAAEXNN58BLMyjf4iZIy1KZZJBUFyiNlLtNSg)
 
 ```plain
 You have access to the tools to work with QGIS. You will do the following:
@@ -136,3 +138,52 @@ You have access to the tools to work with QGIS. You will do the following:
 	8. Render the map to "C:/Users/USER/GitHub/qgis_mcp/data/cdmx.png"
 	9. Save the project.
 ```
+
+```plain
+In my version
+You have access to the tools to work with QGIS. You will do the following:
+
+1. **Ping to check the connection**. If successful, proceed.  
+
+2. **Create a new QGIS project** and save it to:  
+   **"D:/PROJECT/MCP/claudemap.qgz"** (gunakan slash `/` untuk kompatibilitas).  
+
+3. **Load vector layers**:  
+   a. Load **"D:/PROJECT/MCP/map (2).osm"** (OSM layers akan terbagi menjadi `points`, `lines`, `multilinestrings`, `multipolygons`).  
+   b. Load **"D:/PROJECT/MCP/Bahan_Mundupesisir/aoi.shp"** and name it **"aoi"**.  
+
+4. **Zoom to the "aoi" layer** to set the initial extent.  
+
+5. **Remove/hide unnecessary layers**:  
+   a. Remove layer **"map (2) — points"** (klik kanan > Remove Layer).  
+   b. Hide layer **"aoi"** (untuk mempertahankan extent tetapi tidak menampilkannya di peta).  
+
+6. **Style layers**:  
+   a. **"map (2) — lines"**:  
+      - Line color: **#ff6201** (orange)  
+      - Stroke width: **0.5 mm**  
+   b. **"map (2) — multilinestrings"**:  
+      - Line color: **#8bff07** (hijau neon)  
+      - Stroke width: **0.8 mm**  
+   c. **"map (2) — multipolygons"**:  
+      - Fill color: **#fff65f** (kuning pucat)  
+      - Stroke color: **#fff65f** (sama dengan fill)  
+      - Stroke width: **0.3 mm**  
+      - Transparency: **80%**  
+
+7. **Create Print Layout (A4 Portrait)**:  
+   a. Tambahkan **Map Item** dengan ukuran A4 (210x297 mm).  
+   b. Set **scale to 1:10,000** and enable **"Lock layers for map item"**.  
+   c. Tambahkan **Title**:  
+      - Text: **"PETA MUNDUPESISIR BY CLAUDE.AI"**  
+      - Font: **Bold, 24pt**  
+      - Posisi: Atas tengah.  
+   d. Tambahkan **Scale Bar** dan **Legend** (opsional).  
+
+8. **Export to PNG**:  
+   - Path: **"D:/PROJECT/MCP/claudemap.png"**  
+   - Resolution: **600 DPI** (pastikan ukuran file tidak terlalu besar).  
+
+9. **Save the QGIS project**.
+```
+
