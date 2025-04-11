@@ -50,7 +50,7 @@ Otherwise installation instructions are on their website: [Install uv](https://d
 Download this repo to your computer. You can clone it with:
 
 ```bash
-git clone git@github.com:jjsantos01/qgis_mcp.git
+https://github.com/syauqi-uqi/qgis_mcp_modify1.git
 ```
 
 ### QGIS plugin
@@ -78,7 +78,7 @@ Go to `Claude` > `Settings` > `Developer` > `Edit Config` > `claude_desktop_conf
             "command": "uv",
             "args": [
                 "--directory",
-                "/ABSOLUTE/PATH/TO/PARENT/REPO/FOLDER/qgis_mcp/src/qgis_mcp",
+                "#change this line to your directory#",
                 "run",
                 "qgis_mcp_server.py"
             ]
