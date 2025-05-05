@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/syauqi-uqi-qgis-mcp-modify1-badge.png)](https://mseep.ai/app/syauqi-uqi-qgis-mcp-modify1)
+
 # QGISMCP - QGIS Model Context Protocol Integration (updated version from https://github.com/jjsantos01/qgis_mcp)
 
 QGISMCP connects [QGIS](https://qgis.org/) to [Claude AI](https://claude.ai/chat) through the Model Context Protocol (MCP), allowing Claude to directly interact with and control QGIS. This integration enables prompt assisted project creation, layer loading, code execution and more.
